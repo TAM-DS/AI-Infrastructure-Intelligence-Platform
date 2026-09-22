@@ -1,0 +1,6 @@
+[project]
+name = "ai-infrastructure-intelligence-platform"
+version = "1.0.0"
+description = "Evidence-led FinOps analytics for synthetic multi-cloud AI infrastructure data."
+requires-python = ">=3.11"
+dependencies = []
