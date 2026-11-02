@@ -86,15 +86,15 @@ def load_evidence() -> tuple[dict, pd.DataFrame, pd.DataFrame]:
 
 
 def money(number: object, decimals: int = 0) -> str:
-    return f"\${Decimal(str(number)):,.{decimals}f}"
+    return f"${Decimal(str(number)):,.{decimals}f}"
 
 
 def scaled_money(number: object) -> str:
     value = Decimal(str(number))
     if abs(value) >= Decimal("1000000"):
-        return f"\${value / Decimal('1000000'):,.2f}M"
+        return f"${value / Decimal('1000000'):,.2f}M"
     if abs(value) >= Decimal("1000"):
-        return f"\${value / Decimal('1000'):,.1f}K"
+        return f"${value / Decimal('1000'):,.1f}K"
     return money(value, 2)
 
 
