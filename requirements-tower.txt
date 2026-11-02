@@ -1,0 +1,4 @@
+# The underlying evidence verifier remains standard-library-only.
+streamlit>=1.39,<2
+plotly>=5.24,<7
+pandas>=2.2,<4
