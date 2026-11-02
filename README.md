@@ -60,6 +60,54 @@ The repository follows four rules:
 
 That distinction is the difference between a dashboard that looks persuasive and an analytical system that can support a decision.
 
+## Executive evidence gallery
+
+Seven captures from the functioning **AI Infrastructure Economics Control Tower**. All source data is **synthetic**; the 2023–2024 finance baseline and November 2025–January 2026 operations are deliberately separate. Token counts, rates, routing percentages, retries, and growth below are **what-if inputs**, not observed token billing.
+
+### 01 · AI Infrastructure Command Center
+
+![Executive dashboard: 90-day cloud spend, GPU cost concentration, application requests, and synthetic inference volume](docs/images/tower-01-command-center.png)
+
+The executive operating picture tracks **$94,410.59 in modeled 90-day cloud spending**, including **$25,829.78 GPU-tagged cost**, alongside **280,915 synthetic inferences**. A concentration signal alone does not prove waste.
+
+### 02 · Token Economics: scenario model
+
+![Interactive hypothetical token-cost view with input/output cost categories and scenario assumptions](docs/images/tower-02-token-economics.png)
+
+An explicit planning model translates synthetic inference volume into **hypothetical** token economics. Token counts, prices, and retry costs are user-adjustable assumptions, **not measured charges**.
+
+### 03 · Model Routing Sensitivity
+
+![Token-cost sensitivity under alternate model routing assumptions](docs/images/tower-03-routing-sensitivity.png)
+
+The lower-cost model-routing slider changes projected token expenditure; cost savings should be assessed against **model quality, latency, and safety evaluations**, not price alone.
+
+### 04 · Cloud Optimization
+
+![Historical finance baseline and modeled optimization opportunity dashboard](docs/images/tower-04-cloud-optimization.png)
+
+The historical synthetic dataset separates **$9.20M modeled budget**, **$3.81M actual modeled allocation**, **$5.38M budget variance**, and **$207.4K potential optimization opportunity**. A budget gap is *not* booked savings.
+
+### 05 · Budget Versus Synthetic Actual
+
+![Monthly 2023–2024 budget and synthetic actual cloud spend comparison](docs/images/tower-05-budget-vs-actual.png)
+
+Department-level budget and historical cloud costs reconcile over the 2023–2024 baseline; this historical chart is **not mixed** with the subsequent 90-day inference telemetry.
+
+### 06 · Planning Assumptions
+
+![Sidebar controls for assumed tokens per inference, routing mix, retries, price inputs, and growth](docs/images/tower-06-planning-assumptions.png)
+
+Visible scenario controls make the model's assumptions challengeable by a client or executive. The token-cost plan must **not** be added to historical cloud billing because the datasets do not establish mutually exclusive charges.
+
+### 07 · Executive Decision Controls
+
+![Executive review queue with evidence classes, testable data-lineage controls, and accountable recommendations](docs/images/tower-07-decision-controls.png)
+
+The review queue distinguishes **source observations, derived results, scenario assumptions, and human sign-off**. Recommendations are read-only; no cloud remediation or purchasing actions are performed.
+
+> **Evidence contract:** This is a synthetic portfolio reference implementation, not a deployed client platform, token invoice, realized-savings claim, or live production security assessment. Reproduce verified metrics with the standard-library financial verifier and review what-if assumptions separately.
+
 ## Interactive AI Infrastructure Economics Control Tower
 
 **Executive decision:** Can leadership distinguish evidenced cloud consumption, potential optimization, and *modeled* AI token economics before approving changes?
