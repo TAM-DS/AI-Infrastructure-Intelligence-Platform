@@ -60,6 +60,42 @@ The repository follows four rules:
 
 That distinction is the difference between a dashboard that looks persuasive and an analytical system that can support a decision.
 
+## Interactive AI Infrastructure Economics Control Tower
+
+**Executive decision:** Can leadership distinguish evidenced cloud consumption, potential optimization, and *modeled* AI token economics before approving changes?
+
+The **Streamlit + Plotly control tower** contains four interactive views:
+
+| Executive workspace | What it demonstrates |
+| --- | --- |
+| **Command Center** | Synthetic 90-day daily costs, GPU cost concentration, inference volume, and review signals |
+| **Token Economics** | Editable hypothetical input/output tokens, model pricing tiers, routing mix, retry overhead, and volume growth |
+| **Cloud Optimization** | Separate 2023–24 budget reconciliation, actual allocation, provider costs, and optimization candidates |
+| **Decision Controls** | Evidence lineage, limitations, human decision rights, and actionable follow-up questions |
+
+### Run locally
+
+Requires Python 3.11+. From the repository root:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-tower.txt
+PYTHONPATH=src python -m unittest discover -s tests -v
+python -m streamlit run streamlit_app.py
+```
+
+Open the local URL printed by Streamlit (usually `http://localhost:8501`).
+
+### Financial evidence boundaries
+
+- **2023–24 baseline**: $9.196M modeled budget, $3.813M modeled actuals and $5.383M budget variance. **Variance is not savings.**
+- **2025–26 operational window**: $94.41K modeled 90-day cloud spending, $25.83K GPU-tagged costs and 280,915 synthetic inferences. This is **not** the same time window as the budget baseline.
+- **Token planning**: no input/output token counts, token bills, model prices, latency, eval results, or actual retry logs exist in the committed source. Rates and tokens per inference are clearly labeled **hypothetical assumptions**; the scenario must **not** be added to historical cloud spend, because cloud charges may already include overlapping costs.
+- **Executive decision**: model outputs are for analysis and human review, not autonomously booked savings, purchasing decisions, or production security assessments.
+
+The application is **local, read-only, and synthetic-data-only**: no external cloud access or live client data.
+
 ## Implemented analytical flow
 
 ```mermaid
