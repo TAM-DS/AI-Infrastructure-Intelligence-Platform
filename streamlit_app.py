@@ -98,14 +98,14 @@ def scaled_money(number: object) -> str:
     return money(value, 2)
 
 
-def chart_style(fig: go.Figure, *, height: int = 310) -> go.Figure:
+def chart_style(fig: go.Figure, *, height: int = 310, show_legend: bool = True) -> go.Figure:
     fig.update_layout(
         height=height,
         paper_bgcolor=PLOT_BG,
         plot_bgcolor=PLOT_BG,
         font=dict(color="#C4D7E5", family="DM Sans"),
         margin=dict(l=18, r=14, t=24, b=20),
-        showlegend=True,
+        showlegend=show_legend,
         legend=dict(orientation="h", y=-0.23),
         hoverlabel=dict(bgcolor="#142A40", font_color="#EFF7FF"),
     )
@@ -125,7 +125,7 @@ def simple_bars(entries: dict[str, Decimal], *, title: str, color: str) -> None:
     ))
     fig.update_layout(title=title, showlegend=False)
     fig.update_xaxes(tickprefix="$", tickformat="~s")
-    st.plotly_chart(chart_style(fig, height=335), use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(chart_style(fig, height=335, show_legend=False), use_container_width=True, config={"displayModeBar": False})
 
 
 try:
@@ -217,7 +217,7 @@ with overview:
                 hovertemplate="%{x|%b %d, %Y}<br>$%{y:,.2f}<extra></extra>",
             ))
             fig.update_yaxes(tickprefix="$")
-            st.plotly_chart(chart_style(fig, height=320), use_container_width=True, config={"displayModeBar": False})
+            st.plotly_chart(chart_style(fig, height=320, show_legend=False), use_container_width=True, config={"displayModeBar": False})
     with b:
         with st.container(border=True):
             st.markdown("**GPU cost concentration**")
