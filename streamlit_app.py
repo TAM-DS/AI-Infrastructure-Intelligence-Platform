@@ -293,7 +293,7 @@ with economics:
             ))
             fig.update_xaxes(title="Assumed share routed to Tier B")
             fig.update_yaxes(title="Hypothetical 90-day token cost", tickprefix="$")
-            st.plotly_chart(chart_style(fig, height=330), use_container_width=True, config={"displayModeBar": False})
+            st.plotly_chart(chart_style(fig, height=330, show_legend=False), use_container_width=True, config={"displayModeBar": False})
     st.markdown(
         '<div class="caption-card"><b>Architecture decision:</b> Use cheaper models only '
         'when evals demonstrate adequate quality, latency and safety. Routing percentages '
